@@ -26,6 +26,7 @@ import List from '@ckeditor/ckeditor5-list/src/list';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
+import PlaceHolder from 'ckeditor5-placeholder';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
@@ -56,6 +57,7 @@ ClassicEditor.builtinPlugins = [
 	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
+	PlaceHolder,
 	Table,
 	TableToolbar,
 	TextTransformation
@@ -66,6 +68,8 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
+			'|',
+			'placeholder',
 			'|',
 			'bold',
 			'italic',
@@ -99,6 +103,21 @@ ClassicEditor.defaultConfig = {
 			'tableColumn',
 			'tableRow',
 			'mergeTableCells'
+		]
+	},
+	placeholderBrackets:{
+		open: '[',
+		close: ']'
+	},
+	placeholderProps: {
+		types: [
+			"Patient First Name",
+			"Patient Full Name",
+			"Practitioner Name",
+			"Practitioner Name with Title",
+			"Hospital Name",
+			"Hospital Address",
+			"Hospital Email",
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.

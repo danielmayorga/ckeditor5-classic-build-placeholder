@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
+  "name": "ckeditor5-build-classic-placeholder",
   "version": "34.1.0",
-  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "description": "The classic editor build of CKEditor 5 with the placeholder plugin – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -18,7 +18,8 @@
     "collaboration",
     "collaborative",
     "real-time",
-    "framework"
+    "framework",
+    "placeholder"
   ],
   "main": "./build/ckeditor.js",
   "files": [
@@ -51,6 +52,7 @@
     "@ckeditor/ckeditor5-dev-utils": "^30.0.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^30.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^34.1.0",
+    "ckeditor5-placeholder": "^1.2.1",
     "css-loader": "^5.2.7",
     "postcss-loader": "^4.3.0",
     "raw-loader": "^4.0.1",
