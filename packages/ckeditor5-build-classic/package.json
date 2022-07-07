@@ -1,7 +1,7 @@
 {
   "name": "ckeditor5-build-classic-placeholder",
-  "version": "34.1.0",
-  "description": "The classic editor build of CKEditor 5 with the placeholder plugin – the best browser-based rich text editor.",
+  "version": "34.1.1",
+  "description": "The classic editor build of CKEditor 5 with the placeholder plugin and base64 image uploading – an okay browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -45,7 +45,8 @@
     "@ckeditor/ckeditor5-paragraph": "^34.1.0",
     "@ckeditor/ckeditor5-paste-from-office": "^34.1.0",
     "@ckeditor/ckeditor5-table": "^34.1.0",
-    "@ckeditor/ckeditor5-typing": "^34.1.0"
+    "@ckeditor/ckeditor5-typing": "^34.1.0",
+    "@ckeditor/ckeditor5-upload": "^34.1.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^34.1.0",
